@@ -1,0 +1,7 @@
+<div ng-repeat='lesson in lessons'>
+  {{ lesson }}
+</div>
+
+<select ng-model ="selectedLesson" ng-options="lesson for lesson in lessons"></select>
+
+<button ng-click="dayAlert({ lesson: selectedLesson , day: lessonDay })">{{buttonText}}</button>
